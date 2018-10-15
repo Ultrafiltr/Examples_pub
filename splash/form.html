@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Splash!</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+ <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Rubik:500&amp;subset=cyrillic" rel="stylesheet">
+<body>
+
+    <header class="form">
+      <div class="header-container">
+        <!-- Вопрос : Убрать ли див или сделать разный класс у дива и ссылки? -->
+
+         <!-- <div class="logo"> -->
+          <a href="index.html" class="logo">
+            <img src="img/logo.png" height="50" alt="Splash">
+            <span>SPLASH</span>
+          </a>
+        <!-- </div> -->
+
+
+          <nav>
+            <ul>
+              <li><a href="#" class="nav-item">Каталог</a></li>
+              <li><a href="#" class="nav-item">Вопросы</a></li>
+              <li><a href="#" class="nav-item">Контакты</a></li>
+            </ul>
+          </nav>
+
+
+
+          <a href="#" class="basket"><img class="basket-img" src="img/logo_basket.png" width="20px" alt="">Корзина</a> <!-- + class = "not-empty" -->
+          <a href="#" class="callback"><u>Заказать обратный звонок</u></a>
+
+
+
+               <h1 class="form">Форма заказа</h1>
+
+      </div>
+
+    </header>
+
+
+
+
+<main class="form"> <!-- фон и отступ -->
+
+          <div class="form-container">
+             <form action="https://httpbin.org/post" method="post">
+
+
+                          <div class="form-item-list">
+                                       <!-- <div class="form-head"> -->
+                                          <span class="form-item-list">Наименование</span>
+                                          <span class="form-item-count">Количество</span>
+                                        <!-- </div> -->
+
+                                          <ol class="form-item-list" type="1">
+
+                                            <li>
+                                                <label><span class="form-label">Аквариум 2567 Панорамный</span>
+                                                     <input class="form-item-count" type="number" size="2" placeholder="1" name="aq-2567p" />
+                                                </label>
+                                            </li>
+
+                                            <li>
+
+                                             <label>
+                                             <span class="form-label">Сом пресноводный</span>
+                                                   <input class="form-item-count" type="number" size="2" placeholder="5" name="fish-002" />
+                                              </label>
+                                            </li>
+
+                                            <li>
+
+                                                <label>
+                                                <span class="form-label">Золотая рыбка обычная</span>
+                                                       <input class="form-item-count" type="number" size="2" placeholder="3" name="fish-777" />
+                                                  </label>
+                                            </li>
+                                          </ol>
+
+                          </div>
+
+
+
+                                          <div class="form-delivery">
+                                                <div class="form-delivery-deltype">
+                                                <p>Способ доставки</p>
+                                                    <select name="delivery-type-select">
+                                                      <option>самовывоз</option>
+                                                      <option>доставка</option>
+                                                      <option>отдельно</option>
+                                                    </select>
+                                                 </div>
+
+
+                                                 <div class="form-delivery-paytype">
+                                                 <p>Способ оплаты</p>
+                                                    <select name="pay-type-select">
+                                                      <option>наличными</option>
+                                                      <option>безналичными</option>
+                                                    </select>
+                                                  </div>
+                                          </div>
+
+
+                                          <div class="form-customer-info">
+                                                    <div class="form-customer-name">
+                                                      <span>Имя</span>
+                                                        <label class="name">
+                                                          <input type="text" width="170px" name="first-name" />
+                                                        </label>
+                                                      </div>
+
+                                                    <div class="form-customer-lastname">
+                                                      <span>Фамилия</span>
+                                                        <label class="lastname">
+                                                          <input type="text" width="170px" name="last-name" />
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-customer-phone">
+                                                      <span>Телефон</span>
+                                                        <label >
+                                                          <input type="text" width="170px" name="phone" />
+                                                        </label>
+                                                    </div>
+
+                                                    <button type="submit">Оформить заказ</button>
+                                          </div>
+              </form>
+          </div>
+
+  </main>
+
+
+
+
+
+
+<footer>
+  <div class="footer-container">
+        <div class="footer-logo">
+          <a href="index.html">
+             <img src="img/footer-logo.png" height="50" alt="Splash">
+             <span>SPLASH</span>
+          </a>
+        </div>
+
+        <div class="footer-nav">
+              <span>Каталог</span>
+              <ul>
+                <li> <a href="#">Рыбы</a> </li>
+                <li> <a href="#">Оборудование</a> </li>
+                <li> <a href="#">Аквариумы</a> </li>
+                <li> <a href="#">Грунты и наполнители</a> </li>
+                <li> <a href="#">Корма</a> </li>
+              </ul>
+        </div>
+
+        <div class="footer-callback-and-media">
+          <a href="#" class="footer-callback"><u>Заказать обратный звонок</u></a>
+            <div class="social-media">
+              <a href="http://ok.ru"><img src="img/social-media-odnoklassniki.png" alt="odnoklassniki"></a>
+              <a href="http://twitter.com"><img src="img/social-media-twitter.png" alt="twitter"></a>
+              <a href="http://vk.com"><img src="img/social-media-vk.png" alt="vk"></a>
+            </div>
+        </div>
+  </div>
+</footer>
+
+
+
+</body>
+
+</html>
